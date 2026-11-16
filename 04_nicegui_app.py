@@ -95,4 +95,4 @@ def index():
 
 
 if __name__ in {"__main__", "__mp_main__"}:
-    ui.run(title="NovaUI — NiceGUI", width=940, height=600, reload=False)
+    ui.run(title="NovaUI — NiceGUI", dark=True, reload=False)

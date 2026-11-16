@@ -57,7 +57,7 @@ def main(page: ft.Page):
         bgcolor="#1e293b",
         leading=ft.Container(
             content=ft.Text("⚡ NovaUI", size=20, weight=ft.FontWeight.BOLD, color="#38bdf8"),
-            padding=ft.padding.only(top=20, bottom=16, left=12),
+            padding=ft.Padding.only(top=20, bottom=16, left=12),
         ),
         destinations=[
             ft.NavigationRailDestination(icon=ft.Icons.DASHBOARD_OUTLINED, selected_icon=ft.Icons.DASHBOARD, label="Dashboard"),
@@ -74,7 +74,7 @@ def main(page: ft.Page):
             padding=18,
             border_radius=12,
             bgcolor="#1e293b",
-            border=ft.border.all(1, "#334155"),
+            border=ft.Border.all(1, "#334155"),
             content=ft.Column(
                 spacing=4,
                 controls=[
@@ -123,7 +123,7 @@ def main(page: ft.Page):
                     padding=20,
                     border_radius=12,
                     bgcolor="#1e293b",
-                    border=ft.border.all(1, "#334155"),
+                    border=ft.Border.all(1, "#334155"),
                     content=ft.Column(
                         spacing=12,
                         expand=True,
@@ -145,7 +145,7 @@ def main(page: ft.Page):
                                 padding=12,
                                 border_radius=8,
                                 bgcolor="#0f172a",
-                                border=ft.border.all(1, "#334155"),
+                                border=ft.Border.all(1, "#334155"),
                                 content=log_column,
                             ),
                         ],
@@ -159,4 +159,4 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.run(main)
